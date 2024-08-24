@@ -310,9 +310,9 @@ query_table_field_mappings = {
         "Details": "RegistryValueData",
         "User": "InitiatingProcessAccountName",
     },
-    "AADSignInEventsBeta": {
-        "SourceIP": "IPAddress",
-    },
+    #"AADSignInEventsBeta": {
+    #    "SourceIP": "IPAddress",
+    #},
 }
 
 ## Generic catch-all field mappings for sysmon -> microsoft 365 defender fields that appear in most tables and
