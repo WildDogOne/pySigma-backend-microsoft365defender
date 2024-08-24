@@ -310,6 +310,9 @@ query_table_field_mappings = {
         "Details": "RegistryValueData",
         "User": "InitiatingProcessAccountName",
     },
+    "AADSignInEventsBeta": {
+        "SourceIP": "IPAddress",
+    },
 }
 
 ## Generic catch-all field mappings for sysmon -> microsoft 365 defender fields that appear in most tables and
@@ -573,6 +576,47 @@ valid_fields_per_table = {
         "AppGuardContainerId",
         "AdditionalFields",
     ],
+    "AADSignInEventsBeta": [
+        "Timestamp" "Application",
+        "ApplicationId",
+        "LogonType",
+        "EndpointCall",
+        "ErrorCode",
+        "CorrelationId",
+        "SessionId",
+        "AccountDisplayName",
+        "AccountObjectId",
+        "AccountUpn",
+        "IsExternalUser",
+        "IsGuestUser",
+        "LastPasswordChangeTimestamp",
+        "ResourceDisplayName",
+        "ResourceId",
+        "ResourceTenantId",
+        "DeviceName",
+        "AadDeviceId",
+        "OSPlatform",
+        "DeviceTrustType",
+        "IsManaged",
+        "IsCompliant",
+        "AuthenticationProcessingDetails",
+        "AuthenticationRequirement",
+        "TokenIssuerType",
+        "UserAgent",
+        "ClientAppUsed",
+        "Browser",
+        "ConditionalAccessPolicies",
+        "ConditionalAccessStatus",
+        "IPAddress",
+        "Country",
+        "State",
+        "City",
+        "Latitude",
+        "Longitude",
+        "NetworkLocationDetails",
+        "RequestId",
+        "ReportId",
+    ],
 }
 
 # Mapping from ParentImage to InitiatingProcessParentFileName. Must be used alongside of ParentImageValueTransformation
@@ -599,6 +643,7 @@ table_to_category_mappings = {
         "registry_set",
     ],
     "DeviceNetworkEvents": ["network_connection"],
+    "AADSignInEventsBeta": ["aad_signin", "AADSignInEvents"],
 }
 
 ## rule categories -> RuleConditions
