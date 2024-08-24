@@ -643,7 +643,7 @@ table_to_category_mappings = {
         "registry_set",
     ],
     "DeviceNetworkEvents": ["network_connection"],
-    "AADSignInEventsBeta": ["aad_signin", "AADSignInEvents"],
+    #"AADSignInEventsBeta": ["aad_signin", "AADSignInEvents"],
 }
 
 ## rule categories -> RuleConditions
